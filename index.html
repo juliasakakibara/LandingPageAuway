@@ -1,45 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AuWay Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#hero">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#ajuda">Ajuda</a></li>
-    </ul>
-  </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
 
-  <!-- Hero Section -->
-  <section id="hero" class="section hero">
-    <h1>Bem-vindo ao AuWay</h1>
-    <p>Transformando passeios com seu pet em experiências mais saudáveis e divertidas.</p>
-    <a href="https://apps.apple.com" class="download-btn">Baixar na App Store</a>
-  </section>
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Sobre Section -->
-  <section id="sobre" class="section sobre">
-    <h2>Sobre o AuWay</h2>
-    <p>AuWay ajuda donos de pets a encontrarem novas rotas e desafios para seus passeios diários, melhorando o bem-estar dos animais.</p>
-  </section>
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Ajuda Section -->
-  <section id="ajuda" class="section ajuda">
-    <h2>Ajuda</h2>
-    <p>Tem dúvidas ou precisa de ajuda? Entre em contato conosco pelo Instagram @auwayapp ou visite nossa página de suporte.</p>
-  </section>
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>auway</h2>
+        </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 AuWay. Todos os direitos reservados.</p>
-  </footer>
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
 
-  <script src="scripts.js"></script>
-</body>
+          <ul class="nav_menu_list">
+
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">sobre</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">app</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">ajuda</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Boas vindas ao <span>auway</span>
+              <br />
+              Vamos passear?
+            </h1>
+            <p class="info-text">
+              Explorar o app
+            </p>
+
+            <div class="btn_wrapper">
+              <button class="btn view_more_btn">
+                ver tudo <i class="ri-arrow-right-line"></i>
+              </button>
+
+              <button class="btn documentation_btn">Download</button>
+            </div>
+          </div>
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./img/team.png" alt="team-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="grid-cols-3">
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Titulo legal </span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                ratione facilis animi voluptas exercitationem molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Titulo muito legal</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                ipsum esse corrupti. Quo, labore debitis!
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">O melhor app do mundo</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                nostrum voluptate totam ipsa corrupti vero!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./script.js" defer></script>
+  </body>
 </html>
