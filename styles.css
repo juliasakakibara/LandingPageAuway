@@ -1,76 +1,74 @@
-/* Reset CSS */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Fonte Geral */
-body {
-    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* Estilos de Navegação */
-header {
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Seção "Sobre Mim" */
-section {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: auto;
-}
-
-h1, h2 {
-    font-family: 'Work Sans', sans-serif;
-    color: #000;
-}
-
-/* Estilos de Hero */
-.hero {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-
-.hero img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-}
-
-
-.tags {
-    display: inline-block;
+  }
+  
+  .navbar {
     background-color: #333;
-    color: #fff;
-    padding: 0.3rem 0.6rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-    .hero {
-        flex-direction: row;
-    }
-}
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ff9800;
+  }
+  
+  .section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    background-color: #4CAF50;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .sobre {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .ajuda {
+    background-color: #333;
+    color: white;
+  }
+  
+  .download-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  

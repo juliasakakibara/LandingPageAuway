@@ -1,73 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>auwayapp</title>
-    <!-- Link para Fonte San-serif e Grotesk (Exemplo: Google Fonts) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link para CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuWay Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Menu de Navegação -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#quemsomos">Quem somos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><button id="btn-en">EN</button></li>
-                <li><button id="btn-pt">PT</button></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#ajuda">Ajuda</a></li>
+    </ul>
+  </nav>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h1>Sobre</h1>
-        <p>Grupo auway</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <h1>Bem-vindo ao AuWay</h1>
+    <p>Transformando passeios com seu pet em experiências mais saudáveis e divertidas.</p>
+    <a href="https://apps.apple.com" class="download-btn">Baixar na App Store</a>
+  </section>
 
-    <!-- Seção Hero 1 -->
-    <section id="hero">
-        <h2>Hero</h2>
-        <div class="hero">
-            <a href="hero1.html">
-                <img src="https://via.placeholder.com/300" alt="Hero">
-                <div>
-                    <h3>Hero</h3>
-                    <p>Resumo do projeto com uma breve descrição...</p>
-                </div>
-            </a>
-        </div>
-        <!-- Repetir para outros projetos -->
-    </section>
+  <!-- Sobre Section -->
+  <section id="sobre" class="section sobre">
+    <h2>Sobre o AuWay</h2>
+    <p>AuWay ajuda donos de pets a encontrarem novas rotas e desafios para seus passeios diários, melhorando o bem-estar dos animais.</p>
+  </section>
 
-     <!-- Seção Hero 2 -->
-     <section id="hero">
-        <h2>Hero</h2>
-        <div class="hero">
-            <a href="hero1.html">
-                <img src="https://via.placeholder.com/300" alt="Hero">
-                <div>
-                    <h3>Hero2</h3>
-                    <p>Resumo do projeto com uma breve descrição...</p>
-                </div>
-            </a>
-        </div>
-        <!-- Repetir para outros projetos -->
-    </section>
+  <!-- Ajuda Section -->
+  <section id="ajuda" class="section ajuda">
+    <h2>Ajuda</h2>
+    <p>Tem dúvidas ou precisa de ajuda? Entre em contato conosco pelo Instagram @auwayapp ou visite nossa página de suporte.</p>
+  </section>
 
-    <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:contatol@auway.com">contato@auway.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/auwayapp/">instagram.com/auwayapp</a></p>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 AuWay. Todos os direitos reservados.</p>
+  </footer>
 
-    <!-- Script para Transições e Multilíngue -->
-    <script src="scripts.js"></script>Í
+  <script src="scripts.js"></script>
 </body>
 </html>
