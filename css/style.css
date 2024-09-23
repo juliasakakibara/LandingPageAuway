@@ -1,11 +1,15 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"); */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./font/GeneralSans-Medium.otf') format('.otf'); /* ou .woff/.otf */
+}
 /* ==== ROOT RESET ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "General Sans", sans-serif;
 }
 *,
 *::before,
@@ -15,11 +19,11 @@
 
 /* ==== CSS VARIABLES ==== */
 :root {
-  --primary-color: #335eea;
-  --link-color: #506690;
-  --btn-hover-color: #2b50c7;
-  --lg-heading: #161c2d;
-  --text-content: #869ab8;
+  --primary-color: #AFAF22;
+  --link-color: #7C7C18;
+  --btn-hover-color: #AFAF22;
+  --lg-heading: #49490E;
+  --text-content: #E2E26A;
   --fixed-header-height: 4.5rem;
   --font-size-body-text: clamp(14px, 1.6vw, 16px);
   --h1-font-size: calc(var(--font-size-body-text) * 2.4);
@@ -191,8 +195,8 @@ button {
   font-weight: 500;
   color: #fff;
   letter-spacing: 0;
-  background-color: #e1e7fc;
-  color: #0e2a86;
+  background-color: #EAEA95;
+  color: #49490E;
   box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
 }
 .documentation_btn:hover {

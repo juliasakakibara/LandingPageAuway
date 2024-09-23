@@ -13,9 +13,9 @@ const navId = document.getElementById("nav_menu"),
 
 // Conteúdo em Português
 const textPt = {
-  heading: "Boas vindas ao <span>auway</span><br />Vamos passear?",
-  info: "Explorar o app",
-  btn1: "ver tudo",
+  heading: "Transforme sua rotina de passeio com seu pet!",
+  info: "Faça parte de uma comunidade que valoriza a vida dos nossos bichinhos.",
+  //btn1: "ver tudo",
   btn2: "Download",
   navAbout: "sobre",
   navApp: "app",
@@ -24,9 +24,9 @@ const textPt = {
 
 // Conteúdo em Inglês
 const textEn = {
-  heading: "Welcome to <span>auway</span><br />Shall we go for a walk?",
-  info: "Explore the app",
-  btn1: "see all",
+  heading: "Transform your walk routine with your pet!",
+  info: "Be part of a community that values the lives of our beloved pets.",
+  //btn1: "see all",
   btn2: "Download",
   navAbout: "about",
   navApp: "app",
