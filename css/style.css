@@ -32,6 +32,11 @@
 }
 
 /* ==== RESET HTML ==== */
+html {
+  scroll-behavior: smooth; /* Adiciona rolagem */
+   --scroll-duration: 2000ms;
+}
+
 body {
   width: 100%;
   height: 100vh;

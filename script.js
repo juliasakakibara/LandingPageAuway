@@ -9,7 +9,8 @@ const navId = document.getElementById("nav_menu"),
   btn2 = document.getElementById("btn2"),
   navAbout = document.getElementById("nav-about"),
   navApp = document.getElementById("nav-app"),
-  navHelp = document.getElementById("nav-help");
+  navHelp = document.getElementById("nav-help"),
+  teamTitle = document.getElementById("team-title")
 
 // Conteúdo em Português
 const textPt = {
@@ -19,7 +20,8 @@ const textPt = {
   btn2: "Download",
   navAbout: "sobre",
   navApp: "app",
-  navHelp: "ajuda"
+  navHelp: "ajuda",
+  teamTitle: "Nosso Time"
 };
 
 // Conteúdo em Inglês
@@ -30,7 +32,8 @@ const textEn = {
   btn2: "Download",
   navAbout: "about",
   navApp: "app",
-  navHelp: "help"
+  navHelp: "help",
+  teamTitle: "Our Team" 
 };
 
 // Função para atualizar o conteúdo
@@ -43,6 +46,7 @@ function updateContent(isEnglish) {
     navAbout.textContent = textEn.navAbout;
     navApp.textContent = textEn.navApp;
     navHelp.textContent = textEn.navHelp;
+    teamTitle.textContent = textEn.teamTitle;
     languageLabel.textContent = "English";
   } else {
     heading.innerHTML = textPt.heading;
@@ -52,6 +56,7 @@ function updateContent(isEnglish) {
     navAbout.textContent = textPt.navAbout;
     navApp.textContent = textPt.navApp;
     navHelp.textContent = textPt.navHelp;
+    teamTitle.textContent = textPt.teamTitle;
     languageLabel.textContent = "Português";
   }
 }
