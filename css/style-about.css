@@ -97,7 +97,7 @@ p {
     margin-top: auto;
     /* Empurra o botão para o final */
     padding: 10px 20px;
-    background-color: hsl(201, 100%, 35%);
+    background-color: #49490E;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -106,10 +106,10 @@ p {
 }
 
 .linkedin-btn:hover {
-    background-color: #005582;
+    background-color: #AFAF22;
 }
 
 .po-scrum {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #777;
 }
