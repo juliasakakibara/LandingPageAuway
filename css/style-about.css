@@ -74,7 +74,7 @@ h1 {
     /* Limita a largura máxima */
     height: auto;
     /* Ajuste a altura automaticamente para manter a proporção */
-    border-radius: 50%;
+    border-radius: 2%;
     object-fit: cover;
     margin-bottom: 15px;
     /* Adiciona espaço entre a imagem e o conteúdo */
